@@ -9,46 +9,81 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0234b84fb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <header class="main-header">
+        <nav class="navbar header-nav  navbar-expand-lg">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    <h4 class="mb-0">Kyllian <span class="text-primary">Ronné</span></h4>
+                </a>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button id="sidebarToggle" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
-    <div class="collapse d-lg-block sidebar" id="sidebarMenu">
-        <nav class="nav flex-column py-3">
-            <a href="#" class="nav-link d-flex align-items-center">
-                <i class="bi bi-house fs-4"></i>
-                <span class="ms-2">Home</span>
-            </a>
-            <a href="#" class="nav-link d-flex align-items-center">
-                <i class="bi bi-person fs-4"></i>
-                <span class="ms-2">Profile</span>
-            </a>
-            <a href="#expertise" class="nav-link d-flex align-items-center">
-                <i class="fa-solid fa-flask fa-beat"></i>
-                <span class="ms-2">expertise</span>
-            </a>
-        </nav>
-    </div>
-    <main id="mainContent" class=" ms-0 main-content">
-        <div class="container mt-5">
-            <div class="bg-light p-5 rounded-lg">
-                <h1 class="display-4">Kyllian Ronné</h1>
-                <p class="lead">étudiant développeur passionné par le développement d'applications sur mobile ainsi que
-                    sur
-                    les applications Web, je vous laisse découvrir ce qui me passionne en parcourant mon portfolio.</p>
-                <hr class="my-4">
-                <p>Découvrez mes projets et réalisations ci-dessous.</p>
-                <a class="btn btn-primary btn-lg" href="https://github.com/Kyldof/" role="button">En savoir plus</a>
+                <div class="collapse navbar-collapse justify-content-end " id="navbar-collapse-toggle">
+                    <ul class="navbar-nav mx-auto">
+                        <li>
+                            <a href="#Home" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="nav-link">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#expertise" class="nav-link">expertise</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" title="collapse"
+                    data-bs-target="#navbar-collapse-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
             </div>
+        </nav>
+    </header>
+
+    <main id="mainContent" class=" ms-0 main-content">
+
+        <section id="Home" class="home-section bg-gray">
+            <div class="container">
+                <div class="anim-elements">
+                    <div class="anim-element">
+                        
+                        <i class="fab fa-html5 fa-2x me-3 text-primary"></i>
+                    </div>
+                    <div class="anim-element">
+                        
+                        <i class="fab fa-css3-alt fa-2x me-3 text-primary"></i>
+                    </div>
+                    <div class="anim-element"><i class="fab fa-js fa-2x me-3 text-primary"></i></div>
+                    <div class="anim-element"><i class="fab fa-php fa-2x me-3 text-primary"></i></div>
+                    <div class="anim-element"><i class="fab fa-react fa-2x me-3 text-primary"></i></div>
+                </div>
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="home-intro text-center text-lg-start">
+                            <h6>Salut, je m'appelle Kyllian.</h6>
+                            <h1>Je suis <span id="type-it"></span></h1>
+                            <p>Basé à Angers, en France</p>
+                            <a href="#about" class="colored-btn mt-1">
+                                About me
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <div class="home-image text-center">
+                            <img src="/Image/Img_Profile.jpg" alt="image de profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mt-5">
+
 
             <div class="row mt-4">
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -199,7 +234,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/index.js"></script>
+    <script type="module" src="/index.js"></script>
 
 </body>
 
