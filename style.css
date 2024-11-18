@@ -175,8 +175,9 @@ a:hover {
     box-shadow: 5px 5px 0px -2px var(--primary-color);
 }
 
-.gb-gray {
+.bg-gray {
     background-color: rgba(254, 196, 254, 0.1) !important;
+    /* background-color: red; */
 }
 
 .bg-dark {
@@ -446,4 +447,12 @@ main {
 .projet-card>.flecheSpan>span:nth-child(2) {
     bottom: 10px;
     transform: translateY(5px) rotate(-25deg);
+}
+
+/* section main  */
+
+section  h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--dark-color);
 }
